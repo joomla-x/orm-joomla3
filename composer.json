@@ -1,0 +1,17 @@
+{
+  "name": "joomla-x/orm-joomla3",
+  "description": "Meta package for integration of the Joomla!X ORM into Joomla!3",
+  "homepage": "https://github.com/joomla-x/orm-joomla3",
+  "minimum-stability": "dev",
+  "license": "GPL2+",
+  "authors": [
+    {
+      "name": "Niels Braczek",
+      "email": "nbraczek@bsds.de"
+    }
+  ],
+  "require": {
+    "joomla-x/orm": "dev-master",
+    "joomla-x/entities-joomla3": "dev-master"
+  }
+}
