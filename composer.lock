@@ -580,12 +580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-x/entities-joomla3.git",
-                "reference": "98335c207f2df95edbc38fae456de3e669cf4312"
+                "reference": "60468a1dc7ef15137e065dacfbb812ef173643b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-x/entities-joomla3/zipball/98335c207f2df95edbc38fae456de3e669cf4312",
-                "reference": "98335c207f2df95edbc38fae456de3e669cf4312",
+                "url": "https://api.github.com/repos/joomla-x/entities-joomla3/zipball/60468a1dc7ef15137e065dacfbb812ef173643b1",
+                "reference": "60468a1dc7ef15137e065dacfbb812ef173643b1",
                 "shasum": ""
             },
             "type": "library",
@@ -600,7 +600,7 @@
                 }
             ],
             "description": "ORM entity definitions for Joomla!3 entities",
-            "time": "2017-11-14T19:46:41+00:00"
+            "time": "2017-11-14T19:56:25+00:00"
         },
         {
             "name": "joomla-x/event",
