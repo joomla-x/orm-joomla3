@@ -10,6 +10,14 @@
       "email": "nbraczek@bsds.de"
     }
   ],
+  "bin": [
+    "bin/orm-init"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Joomla3\\Glue\\": "src/"
+    }
+  },
   "require": {
     "joomla-x/orm": "dev-master",
     "joomla-x/entities-joomla3": "dev-master"
