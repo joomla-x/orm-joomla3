@@ -654,12 +654,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-x/orm.git",
-                "reference": "5e7503ac6b190be5dc8228877a7d8f6cd57e964c"
+                "reference": "a3317640b92501780a2cef8ec9e6a3a275924eb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-x/orm/zipball/5e7503ac6b190be5dc8228877a7d8f6cd57e964c",
-                "reference": "5e7503ac6b190be5dc8228877a7d8f6cd57e964c",
+                "url": "https://api.github.com/repos/joomla-x/orm/zipball/a3317640b92501780a2cef8ec9e6a3a275924eb0",
+                "reference": "a3317640b92501780a2cef8ec9e6a3a275924eb0",
                 "shasum": ""
             },
             "require": {
@@ -700,7 +700,7 @@
                 "orm",
                 "repository"
             ],
-            "time": "2017-11-14T16:19:52+00:00"
+            "time": "2017-11-14T19:48:04+00:00"
         },
         {
             "name": "joomla/compat",
