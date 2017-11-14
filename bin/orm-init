@@ -1,15 +1,56 @@
-#! /usr/bin/php
 <?php
 
 use Joomla\ORM\Installer\Installer;
 use Joomla3\Glue\ORM;
+use Joomla\CMS\Factory as JFactory;
 
-$root   = getcwd();
+define('_JEXEC', '1');
+
+$root = getcwd();
+echo "Root directory is $root\n";
 $config = "$root/config";
+
+if (file_exists("$root/defines.php")) {
+    require_once "$root/defines.php";
+}
+
+if (!defined('_JDEFINES')) {
+    define('JPATH_BASE', $root);
+    require_once $root . '/includes/defines.php';
+}
+
+// Get the framework.
+require_once JPATH_LIBRARIES . '/import.legacy.php';
+
+// Bootstrap the CMS libraries.
+require_once JPATH_LIBRARIES . '/cms.php';
+
+// Import the configuration.
+require_once JPATH_CONFIGURATION . '/configuration.php';
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+if (!file_exists("$root/config")) {
+    mkdir("$root/config");
+}
+
+if (!file_exists("$root/entities")) {
+    mkdir("$root/entities");
+}
+
+$app = JFactory::getApplication('cli');
 
 require_once "$root/vendor/autoload.php";
 
 $container = ORM::bootstrap();
+
 $installer = new Installer($root, $container);
+
+echo "Installing joomla-x/entities-joomla3\n";
 $installer->install("$root/vendor/joomla-x/entities-joomla3");
+
+echo "Finishing installation\n";
 $installer->finish();
+
+echo "Done.\n";

@@ -3,7 +3,7 @@
 namespace Joomla3\Glue;
 
 use JConfig;
-use JFactory;
+use Joomla\CMS\Factory as JFactory;
 use Joomla\DI\Container;
 use Joomla\ORM\Service\RepositoryFactory;
 use Joomla\ORM\Service\StorageServiceProvider;
@@ -14,12 +14,15 @@ defined('_JEXEC') or die;
 
 class ORM
 {
+    protected static $configDirectrory = JPATH_ROOT . '/config/';
+
     public static function bootstrap()
     {
         self::createDatabaseConfiguration();
         $container         = self::createContainer();
         $repositoryFactory = self::createRepositoryFactory($container);
-        $container->set('repository', $repositoryFactory);
+        $container->set('Repository', $repositoryFactory);
+        $container->set('ConfigDirectory', self::$configDirectrory);
 
         return $container;
     }
@@ -33,7 +36,7 @@ class ORM
      */
     protected static function createRepositoryFactory($container)
     {
-        return (new StorageServiceProvider(JPATH_ROOT . '/config/database.ini'))->createRepositoryFactory($container);
+        return (new StorageServiceProvider(self::$configDirectrory . 'database.ini'))->createRepositoryFactory($container);
     }
 
     /**

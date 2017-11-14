@@ -580,12 +580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-x/entities-joomla3.git",
-                "reference": "051ba39c24713e20c63f2580580137c17059b87a"
+                "reference": "98335c207f2df95edbc38fae456de3e669cf4312"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-x/entities-joomla3/zipball/051ba39c24713e20c63f2580580137c17059b87a",
-                "reference": "051ba39c24713e20c63f2580580137c17059b87a",
+                "url": "https://api.github.com/repos/joomla-x/entities-joomla3/zipball/98335c207f2df95edbc38fae456de3e669cf4312",
+                "reference": "98335c207f2df95edbc38fae456de3e669cf4312",
                 "shasum": ""
             },
             "type": "library",
@@ -600,7 +600,7 @@
                 }
             ],
             "description": "ORM entity definitions for Joomla!3 entities",
-            "time": "2017-11-13T15:26:31+00:00"
+            "time": "2017-11-14T19:46:41+00:00"
         },
         {
             "name": "joomla-x/event",
@@ -654,12 +654,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-x/orm.git",
-                "reference": "4e1566895bd66b422b339b1bbd88f8bd1ba6a610"
+                "reference": "5e7503ac6b190be5dc8228877a7d8f6cd57e964c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-x/orm/zipball/4e1566895bd66b422b339b1bbd88f8bd1ba6a610",
-                "reference": "4e1566895bd66b422b339b1bbd88f8bd1ba6a610",
+                "url": "https://api.github.com/repos/joomla-x/orm/zipball/5e7503ac6b190be5dc8228877a7d8f6cd57e964c",
+                "reference": "5e7503ac6b190be5dc8228877a7d8f6cd57e964c",
                 "shasum": ""
             },
             "require": {
@@ -700,7 +700,7 @@
                 "orm",
                 "repository"
             ],
-            "time": "2017-11-13T15:29:01+00:00"
+            "time": "2017-11-14T16:19:52+00:00"
         },
         {
             "name": "joomla/compat",
